@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML/CSS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    </head>
 
 <body>
     <header>
@@ -16,7 +15,8 @@
     </header>
 
     <main>
-        <h1 style="background-color:DodgerBlue;">Learning HTML & CSS</h1>
+        <h1 style="background-color:tomato;">Learning HTML & CSS</h1>
+        <img src="https://source.unsplash.com/500x200/?coding" alt="html">
         <p>html 실습 중...</p>
         <h3>Tutorials</h3>
         <ul>
@@ -25,6 +25,32 @@
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla HTML Tutorial</a></li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla CSS Tutorial</a></li>
         </ul>
+        <p>My favorite color is <span style="color:blue;font-weight:bold;">blue</span> and I don't like <span style="color:purple;font-weight:bold;">purple</span>.</p>
+        
+        <form>
+            <label for="fname">name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">id:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+        
+        <label for="chk">동의합니다</label>
+        <input type="checkbox" id="chk" name="chk"><br>
+        <q>Quotations</q>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <input type="text" placeholder="제목" name="username" maxlength=20/>
+        <button onclick="alert('Hello!')">버튼</button>
+        <div>
+            <textarea rows="5" cols="30">텍스트를 입력하세요</textarea>
+        </div>
+        <select>
+            <option>옵션1</option>
+            <option>옵션2</option>
+            <option>옵션3</option>
+            <option>옵션4</option>
+        </select><br>
+        <!-- 다른 HTML 페이지를 현제 페이지에 삽입 -->
+        <iframe src="https://www.weather.go.kr/w/weather/now.do" height="500" width="1000" title="Weather"></iframe>
     </main>
 
     <footer>
