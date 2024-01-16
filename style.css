@@ -29,18 +29,17 @@ nav {
     letter-spacing: -0.2px;
 }
 
-div {
-    white-space: pre-line;
-}
+/* div {
+    white-space: 
+} */
 
 
 header{
+    max-width: 1366px;
     display: flex;
-    /* width: 1366px;
-    height: 662px; */
     /* justify-content: center; */
     align-items: center;
-    gap: 220px;
+    gap: 210px;
     padding: 100px 120px;
 }
 
@@ -52,6 +51,37 @@ header{
     max-width: 1366px;
     /* height: 662px;  */
     /* padding-right: px; */
+}
+
+/* typing */
+
+.wrapper {
+    /* height: 100vh; */
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  .typing-demo {
+    width: 11ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 1em;
+  }
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}  
+
+@keyframes blink {
+    50% { border-color: transparent }
+    /* from{
+        width: 0;
+    } */
+    /* 0%, 100% { opacity: 1; }
+    50% { opacity: 0; } */
 }
 
 .badge{
@@ -101,9 +131,7 @@ header h1 em{
 }
 
 .headerLink1{
-    display: block;
     text-decoration: none;
-
     display: flex;
     width: 270px;
     padding: 24px 40px;
@@ -123,9 +151,7 @@ header h1 em{
 }
 
 .headerLink2{
-    display: block;
     text-decoration: none;
-
     display: flex;
     width: 270px;
     padding: 24px 40px;
@@ -145,7 +171,7 @@ header h1 em{
 }
 
 .imageContainer{
-    margin-left: auto;
+    margin-left: 10px;
 }
 
 .profileImage{
@@ -160,13 +186,14 @@ header h1 em{
 }
 
 section{
+    padding: 100px 120px;
     display: flex;
     flex-direction: column;
-    /* padding: 100px, 120px; */
-    height: 497px;
     justify-content: center;
+}
+
+.colorBox{
     align-items: normal;
-    /* gap: 10px; */
     background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
 }
 
@@ -175,13 +202,11 @@ h2{
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 125%; /*50px */
+    line-height: 125%;
     letter-spacing: -0.8px;
-    margin-bottom: 20px;
 }
 
 .aboutMeContainer{
-    padding-left: 120px;
     display: flex;
     flex-direction: column;
 }
@@ -196,13 +221,14 @@ section h2 em{
 
 .aboutMe2{
     /* height: 172px; */
+    margin-top: 20px;
     flex-shrink: 0;
     align-self: stretch;
     color: #333;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 150%; 30px
+    line-height: 150%;
 }
 
 .selfgrowth_icon{
@@ -212,3 +238,35 @@ section h2 em{
     top: -110px;
     right: 0px;
 }
+
+.teckSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 80px;
+}
+
+.techStackContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.teckExplain{
+    padding-top: 24px;
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 130% */
+}
+
+.languageContainer{
+    display: grid;
+    row-gap: 40px;
+    column-gap: 80px;
+    overflow-x: auto;
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+}
+
