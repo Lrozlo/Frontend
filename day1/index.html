@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS</title>
+    </head>
+
+<body>
+    <header>
+        <h1 style="background-color:tomato;">&#128187 Learning HTML & CSS</h1>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">a</a></li>
+                <li><a href="#">b</a></li>
+                <li><a href="#">c</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <p><img src="https://source.unsplash.com/300x100/?coding" alt="html"></p>
+        
+        <div>
+            <h3>&#9998 Tutorials</h3>
+            <ul style="line-height:180%">
+                <li>W3Schools</li>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/html/default.asp">W3Schools HTML Tutorial</a></li>
+                        <li><a href="https://www.w3schools.com/css/default.asp">W3Schools CSS Tutorial</a></li>
+                    </ul>
+                <li>Mozilla</li>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla HTML Tutorial</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla CSS Tutorial</a></li>
+                    </ul>
+            </ul>
+        </div>
+        <p>My favorite color is  and I don't like <span style="color:purple;font-weight:bold;">purple</span>.</p>
+        
+        <form>
+            <label for="name">&#10024 name:</label>
+            <input type="text" id="name" name="name"/><br>
+            <label for="birthday">&#128197 birthday:</label>
+            <input type="date" id="birthday" name="birthday/"><br>
+            <label for="email"> email:</label>
+            <input type="email" id="email" pattern=".+@gmail\.com" placeholder="example@gmail.com" size="30" required>
+            <input type="submit">
+        </form>
+
+        <form>
+            <em>Choose your favorite color</em>
+            <input type="color" name="mycolor" value="blue">
+        </form>
+        <!-- 접었다 펴기 -->
+        <br>
+        <details>
+            <table>
+                <tr>
+                  <th scope="col">HTML</td>
+                  <th scope="col">CSS</td>
+                </tr>
+                <tr>
+                  <td>24/1/9</td>
+                  <td> O </td>
+                </tr>
+                <tr>
+                  <td>24/1/8</td>
+                  <td> X </td>
+                </tr>
+              </table>
+        </details>
+
+        <select style="width: fit-content">
+            <option>html</option>
+            <option>css</option>
+            <option>ddd</option>
+            <option>옵션4</option>
+        </select><br>
+
+        <div>
+            <input type="checkbox" id="chk" name="chk">
+            <label for="chk"><span style="color:blue;font-weight:bold;">check</span></label>
+        </div>
+        <input type="text" placeholder="제목" name="username" maxlength=20/>
+        <button onclick="alert('Hello!')">버튼</button>
+        <div>
+            <textarea rows="5" cols="30">텍스트를 입력하세요</textarea>
+        </div>
+        
+        <!-- 다른 HTML 페이지를 현제 페이지에 삽입 -->
+        <!-- <iframe src="https://www.weather.go.kr/w/weather/now.do" height="500" width="1000" title="Weather"></iframe> -->
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nayeong's webpage. All rights reserved.</p>
+    </footer>
+</body>
+
+<style>
+    table{ border-collapse : collapse; }  /*이중선 제거*/
+    th,td{
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        border: 1px solid #000;
+        
+         vertical-align: top;	/* 위 */
+         vertical-align: bottom;   /* 아래 */
+         vertical-align: middle;   /* 가운데 */
+    }
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+    float: left;
+    width: 20%;
+    height: max-content;
+    background: #ffffff;
+    padding: 10px;
+    }
+    /* Clear floats after the columns */
+    section::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: max-content; 
+    }
+
+    /* Style the footer */
+    footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    }
+</style>
+
+</html>
+
