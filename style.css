@@ -186,13 +186,13 @@ header h1 em{
 }
 
 section{
-    padding: 100px 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .colorBox{
+    padding: 100px 120px;
     align-items: normal;
     background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
 }
@@ -240,6 +240,7 @@ section h2 em{
 }
 
 .teckSection{
+    padding: 100px 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -270,3 +271,107 @@ section h2 em{
     grid-template: repeat(2, 1fr) / repeat(6, 1fr);
 }
 
+.peerSection{
+    display: flex;
+    max-width: 1360px;
+    padding: 80px 0px 120px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.peerBoxContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.peerBoxes{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.peerBox{
+    display: flex;
+    width: 460px;
+    height: 264px;
+    padding: 0px 39px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 10px;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.peerContents{
+    color: #403930;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+.peerName{
+    color: #403930;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 125% */
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FAFAFA;
+    flex-shrink: 0;
+    padding: 53px 0px 53px 0px;
+    gap: 24px;
+}
+.snsIconArea{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+}
+.snsIcon{
+    width: 30px;
+    height: 30px;
+    fill: var(--Dark, #21243D);
+}
+.copyRight{
+    color: var(--Dark, #21243D);
+    text-align: center;
+    font-family: Heebo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.thanksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1366px; */
+    padding: 64px 120px;
+    gap: 10px;
+    background: #E6EEFF;
+}
+.thanksContent{
+    align-self: stretch;
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 60px */
+    letter-spacing: -0.96px;
+}
