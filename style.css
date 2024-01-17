@@ -54,21 +54,19 @@ header{
 }
 
 /* typing */
-
 .wrapper {
     /* height: 100vh; */
     /*This part is important for centering*/
     display: grid;
     place-items: center;
-  }
-  .typing-demo {
+}
+.typing-demo {
     width: 11ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(15), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
-    font-size: 1em;
-  }
+    border-right: 2px solid;
+}
 @keyframes typing {
     from {
         width: 0;
@@ -107,6 +105,7 @@ header{
 header h1{
     margin: 0;
     color: #333;
+    /* font-family: Pretendard; */
     font-size: 64px;
     font-style: normal;
     font-weight: 600;
@@ -274,24 +273,18 @@ section h2 em{
 .peerSection{
     display: flex;
     max-width: 1360px;
-    padding: 80px 0px 120px 0px;
+    padding: 80px 120px 120px 120px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* 얘를 없애야 swiper 작동 */
+    /* align-items: center; */
+    gap: 40px;
 }
+
 
 .peerBoxContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-}
-
-.peerBoxes{
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
+    justify-content: center; 
+    /* align-items: center; */
 }
 
 .peerBox{
@@ -308,6 +301,7 @@ section h2 em{
     background: #FAFAFA;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
 }
+
 .peerContents{
     color: #403930;
     font-family: Work Sans;
@@ -325,6 +319,28 @@ section h2 em{
     font-weight: 700;
     line-height: 25px; /* 125% */
 }
+
+.thanksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1366px; */
+    padding: 64px 120px;
+    gap: 10px;
+    background: #E6EEFF;
+}
+.thanksContent{
+    align-self: stretch;
+    color: #403930;
+    /* font-family: Pretendard; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 60px */
+    letter-spacing: -0.96px;
+}
+
 footer{
     display: flex;
     flex-direction: column;
@@ -353,25 +369,35 @@ footer{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
 
-.thanksContainer{
+    /* position:relative; */
+}
+.contactBox{
+    position:absolute;
+    right:50px;
+    bottom: 5px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* max-width: 1366px; */
-    padding: 64px 120px;
-    gap: 10px;
-    background: #E6EEFF;
+    width: 165px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 10px solid #BBD5F7;
+    background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
 }
-.thanksContent{
-    align-self: stretch;
-    color: #403930;
-    font-family: Pretendard;
-    font-size: 48px;
+.contact{
+    color: rgba(64, 57, 48, 0.80);
+    text-align: center;
+    /* font-family: Pretendard; */
+    font-size: 20px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 125%; /* 60px */
-    letter-spacing: -0.96px;
+    font-weight: 700;
+    line-height: normal;
 }
+.email{
+    color: rgba(64, 57, 48, 0.80);
+    text-align: center;
+    font-size: 12px;
+}
+
