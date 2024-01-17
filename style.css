@@ -278,7 +278,97 @@ section h2 em{
     overflow-x: auto;
     grid-template: repeat(2, 1fr) / repeat(6, 1fr);
 }
+/* project */
+.projectSection{
+    padding: 80px 120px 120px 120px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(244, 244, 244, 0.50);
+}
 
+.projectContainer{
+    display: flex;
+    /* height: 1362px; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+}
+.projectBox{
+    display: flex;
+    padding: 20px 40px 20px 40px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    background: #E6EEFF;
+}
+.Title1{
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 50px */
+    letter-spacing: -0.8px;
+}
+.projectSubBox1{
+    display: flex;
+    min-width: 320px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+.projectContent1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+.projectContent2{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 24px;
+}
+.projectLink{
+    color: #00446A;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    text-decoration-line: underline;
+}
+.projectTitle{
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+}
+.projectExplain{
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+.projectSubBox2{
+    display: flex;
+    gap: 20px;
+
+}
+.projectImage1{
+    width: 155.099px;
+    height: 327.965px;
+    flex-shrink: 0;
+    border-radius: 16.08px;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
 .peerSection{
     display: flex;
     max-width: 1360px;
