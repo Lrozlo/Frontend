@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -5,42 +6,30 @@ body {
 nav {
     /* 레이아웃에 대한 스타일(5~10줄) */
     display: flex;
+    height: 60px;
+    padding: 0px 24px;
     align-items: center;
-    padding-left: 120px;
-    /* gap: 40px; */
-    height: 100px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: flex-start; */
-    /* gap: 10px; */
-    /* background-color: #00000050; */
+    gap: 32px;
+    align-self: stretch;
 }
 
 .navItem {
-    /* 텍스트 스타일(3~8줄) */
-    padding-right: 40px; /* padding-left, padding-right, padding-top, padding-bottom */
-    margin: 10px;
     color: #403930;
-    font-size: 20px;
+    font-family: Pretendard;
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 30px */
-    /* line-height: 1.5; */
-    letter-spacing: -0.2px;
+    line-height: 150%; /* 18px */
 }
 
-/* div {
-    white-space: 
-} */
-
-
 header{
-    max-width: 1366px;
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    gap: 210px;
-    padding: 100px 120px;
+    width: 390px;
+    padding: 60px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .info{
@@ -48,9 +37,6 @@ header{
     flex-direction: column;
     width: 570px;
     gap: 40px;
-    max-width: 1366px;
-    /* height: 662px;  */
-    /* padding-right: px; */
 }
 
 /* typing */
@@ -83,106 +69,93 @@ header{
 }
 
 .badge{
-    /* display: flex; */
-    padding: 12px 24px;
-    /* justify-content: center;
+    display: flex;
+    padding: 8px 24px 8px 24px;
     align-items: center;
-    gap: 10px; */
     border-radius: 10px;
     background: #E6EEFF;
-
     width: fit-content;
     /* 텍스트 속성 */
     color: #000;
-    font-size: 24px;
+    font-family: Pretendard;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 36px */
+    line-height: 150%; /* 24px */
 
-    margin-bottom: 40px;
 }
 
 header h1{
-    margin: 0;
     color: #333;
-    /* font-family: Pretendard; */
-    font-size: 64px;
+    font-family: Pretendard;
+    font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125%; /* 80px */
-    letter-spacing: -1.28px;
+    line-height: 120%; /* 38.4px */
+    letter-spacing: -0.64px;
 
 }
-
 header h1 em{
     background: linear-gradient(99deg, #001F8F 3.58%, rgba(36, 255, 203, 0.50) 90.34%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: Pretendard;
+    font-size: 32px;
     font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.64px;
 }
 
 .headerLinkContainer{
     display: flex; 
-    /* flex-direction: column; */
-    align-items: flex-start;
     gap: 16px;
 }
 
 .headerLink1{
     text-decoration: none;
+
     display: flex;
-    width: 270px;
-    padding: 24px 40px;
+    width: 120px;
+    padding: 16px 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
     border-radius: 16px;
     background: #000;
-    border-radius: 16px;
-    border: 4px solid #000;
-    color: #E6EEFF;
-    font-size: 24px;
+
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 36px */
+    line-height: 150%; /* 21px */
+
 }
 
 .headerLink2{
     text-decoration: none;
     display: flex;
-    width: 270px;
-    padding: 24px 40px;
+    width: 120px;
+    padding: 16px 10px;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
 
-    border-radius: 16px;
-    border: 4px solid #403930;
-    color: #E6EEFF;
     color: #403930;
-    font-size: 24px;
+    font-family: Pretendard;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 36px */
-}
+    line-height: 150%; /* 21px */
 
-.imageContainer{
-    margin-left: 10px;
-}
-
-.profileImage{
-    /* margin-top : 90px; */
-    align-content: left;
-    border-radius: 500px;
-    border: 10px solid #BCF2F9;
-    width: 355.624px;
-    height: 350px;
-    flex-shrink: 0;
-    background: url(https://source.unsplash.com/random/?programming) lightgray 50% / cover no-repeat;
-}
+    border-radius: 16px;
+    border: 1px solid #403930;
+    }
 
 section{
     display: flex;
@@ -191,60 +164,63 @@ section{
 }
 
 .colorBox{
-    padding: 100px 120px;
-    align-items: normal;
-    background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
+    padding: 60px 24px;
+    align-items: flex-start;
+    align-self: stretch;
+    background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);    
 }
 
 h2{
-    color: #000;
-    font-size: 40px;
+    color: #333;
+    font-family: Pretendard;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 125%;
-    letter-spacing: -0.8px;
+    line-height: 125%; /* 22.5px */
+    letter-spacing: -0.36px;
+    align-self: stretch;
 }
 
 .aboutMeContainer{
     display: flex;
     flex-direction: column;
+    gap: 25px;
 }
 
 section h2 em{
     position: relative;
 }
-
+.aboutMeTitle{
+    font-size: 18px;
+}
 .aboutMe1{
     font-style: normal;
 }
 
 .aboutMe2{
-    /* height: 172px; */
-    margin-top: 20px;
-    flex-shrink: 0;
-    align-self: stretch;
     color: #333;
-    font-size: 20px;
+    font-family: Pretendard;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    letter-spacing: -0.28px;
 }
 
 .selfgrowth_icon{
-    width: 120px;
-    height: 120px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    top: -110px;
-    right: 0px;
+    left: 60px;
+    top: -40px;
 }
 
 .teckSection{
-    padding: 100px 120px;
+    padding: 60px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    gap: 80px;
 }
 
 .techStackContainer{
@@ -252,60 +228,69 @@ section h2 em{
     flex-direction: column;
     justify-content: center;
 }
+
 .teckCenter{
-    text-align: center;
-    color: #000;
-    font-size: 40px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 125%;
-    letter-spacing: -0.8px;
+    line-height: 26px;
+    letter-spacing: -0.48px;
+
+    padding-bottom: 24px;
 }
 .teckExplain{
     padding-top: 24px;
-    text-align: center;
     color: #333;
-    font-size: 20px;
+    font-family: Pretendard;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; /* 130% */
+    line-height: 150%; /* 21px */    
+    padding-bottom: 32px;
 }
 
 .languageContainer{
     display: grid;
-    row-gap: 40px;
-    column-gap: 80px;
+    row-gap: 24px;
     overflow-x: auto;
-    grid-template: repeat(2, 1fr) / repeat(6, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
 }
 
+.item{
+    width: 79.5px;
+    height: 80px;
+}
+
+/* 동료평가 */
 .peerSection{
     display: flex;
-    max-width: 1360px;
-    padding: 80px 120px 120px 120px;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
+    align-self: stretch;
     /* 얘를 없애야 swiper 작동 */
     /* align-items: center; */
     gap: 40px;
+    padding: 60px 24px;
 }
-
-
 .peerBoxContainer{
-    justify-content: center; 
-    /* align-items: center; */
-}
-
-.peerBox{
     display: flex;
-    width: 460px;
-    height: 264px;
-    padding: 0px 39px;
+    /* padding: 0px 20px; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
+.peerBox{
+    width: fit-content;
+    height: 200px;
+    display: flex;
+    padding: 24px 16px;
+    margin: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-
+    gap: 16px;
+    align-self: stretch;
+    overflow-x:auto;
     border-radius: 10px;
     background: #FAFAFA;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
@@ -313,20 +298,20 @@ section h2 em{
 
 .peerContents{
     color: #403930;
-    font-family: Work Sans;
-    font-size: 20px;
+    font-family: Pretendard;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 30px */
+    font-weight: 600;
+    line-height: 150%; /* 21px */
 }
 .peerName{
-    color: #403930;
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 20px;
+    color: #1866AF;
+    text-align: right;
+    font-family: Pretendard;
+    font-size: 12px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 25px; /* 125% */
+    font-weight: 400;
+    line-height: 25px; /* 208.333% */
 }
 
 .thanksContainer{
@@ -335,35 +320,36 @@ section h2 em{
     justify-content: center;
     align-items: center;
     /* max-width: 1366px; */
-    padding: 64px 120px;
+    padding: 60px 24px;
     gap: 10px;
     background: #E6EEFF;
 }
 .thanksContent{
-    align-self: stretch;
     color: #403930;
-    /* font-family: Pretendard; */
-    font-size: 48px;
+    font-family: Pretendard;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 125%; /* 60px */
-    letter-spacing: -0.96px;
+    line-height: 125%; /* 30px */
+    letter-spacing: -0.48px;
+    align-self: stretch;
 }
 
 footer{
     display: flex;
+    padding: 40px 0px;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
     background: #FAFAFA;
-    flex-shrink: 0;
-    padding: 53px 0px 53px 0px;
-    gap: 24px;
 }
 .snsIconArea{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 35px;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
 }
 .snsIcon{
     width: 30px;
@@ -371,6 +357,7 @@ footer{
     fill: var(--Dark, #21243D);
 }
 .copyRight{
+    align-self: stretch;
     color: var(--Dark, #21243D);
     text-align: center;
     font-family: Heebo;
@@ -378,7 +365,6 @@ footer{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
     /* position:relative; */
 }
 .contactBox{

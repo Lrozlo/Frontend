@@ -7,7 +7,10 @@
     <title>Document</title>
     <!-- reset.css가 먼저 적용 되어야 함 -->
     <link rel="stylesheet" href="./reset.css">
-    <link rel='stylesheet' href='./style.css'>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./styles-responsive.css" media="all and (max-width:768px)">
+    <link rel='stylesheet' href='./style.css' media="(min-width:768px)">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -52,7 +55,7 @@ transform: scale(1)
 
     <section class="colorBox">
         <div class="aboutMeContainer">
-            <h2>끊임없이 배우고 집요하게 해결하는 <em class="aboutMe1">개발자 김나영입니다.<img src="./images/icon_self_growth.png" class="selfgrowth_icon"></em>
+            <h2 class="aboutMeTitle">끊임없이 배우고 집요하게 해결하는 <em class="aboutMe1">개발자 김나영입니다.<img src="./images/icon_self_growth.png" class="selfgrowth_icon"></em>
             </h2>
             <p class="aboutMe2">항상 새로운 기술에 열려 있으며, 문제 해결에 대한 열정으로 프로젝트에 참여합니다.</br>꾸준한 성장과 협업을 통해 새로운 아이디어를 탐험하고 효과적인 솔루션을 찾는 것을 즐깁니다.</br>강력한 분석 및 문제 해결 능력으로 효율적이고 확장 가능한 코드를 작성하는 것에 자부심을 가지고 있습니다.</br>팀과 함께 협력하며, 사용자 중심의 솔루션을 만들기 위해 노력하고 있습니다.</br>끊임없는 도전을 통해 성장하는 개발자로서 기여하고 싶습니다.</p>
         </div>
@@ -61,7 +64,7 @@ transform: scale(1)
     <section>
         <div class="teckSection"">
             <div class="teckStackContainer">
-                <span align="center"><h2>기술스택</h2></span>
+                <span><h2 class="teckCenter">기술스택</h></span>
                 <p class="teckExplain">지금까지 활용해 본 기술들입니다.</br>넓고 깊은 기술 스택을 얻기 위해 노력하고 있습니다.</p>
             </div>
             <div class="languageContainer">
@@ -151,21 +154,13 @@ transform: scale(1)
     const mySwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         speed: 300,
-        slidesPerView: 2,
+        slidesPerView: 3,
         loop: true,
         autoplay: {
             delay: 5000,
-        },
-        // a11y: {
-        // prevSlideMessage: 'Previous slide',
-        // nextSlideMessage: 'Next slide',
-        // }
-        // slidesPerView: 2
-        // overflow:visible
+        }
     });
-    const swiper = document.querySelector('.swiper').swiper;
-
-    // const swiper = new Swiper('.swiper', {
+    // // const swiper = new Swiper('.swiper', {
     // // Optional parameters
     // direction: 'vertical',
     // loop: true,
