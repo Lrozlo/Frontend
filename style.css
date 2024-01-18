@@ -376,20 +376,21 @@ section h2 em{
     height: 193.433px;
     flex-shrink: 0;
     border-radius: 16.08px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background: lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* peer */
 .peerSection{
-    display: flex;
     max-width: 1360px;
-    padding: 80px 120px 120px 120px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: stretch;
     /* 얘를 없애야 swiper 작동 */
     /* align-items: center; */
     gap: 40px;
+    padding: 80px 120px 120px 120px;
 }
 
 
@@ -400,14 +401,14 @@ section h2 em{
 
 .peerBox{
     display: flex;
-    width: 460px;
-    height: 264px;
-    padding: 0px 39px;
     flex-direction: column;
     justify-content: center;
+    
+    height: 300px;
+    padding: 0px 39px;
+    margin: 5px;
     align-items: center;
     gap: 20px;
-
     border-radius: 10px;
     background: #FAFAFA;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
