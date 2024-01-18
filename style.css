@@ -372,8 +372,8 @@ section h2 em{
 
 }
 .projectImage1{
-    width: 100.153px;
-    height: 193.433px;
+    width: calc(30%);
+    /* height: 193.433px; */
     flex-shrink: 0;
     border-radius: 16.08px;
     background: lightgray 50% / cover no-repeat;
@@ -397,16 +397,23 @@ section h2 em{
 .peerBoxContainer{
     justify-content: center; 
     /* align-items: center; */
+    /* 얘를 추가함으로써 슬라이더 양옆 hidden 성공 */
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 20px;
+    /* border: 2px solid; */
 }
 
 .peerBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     height: 300px;
     padding: 0px 39px;
-    margin: 5px;
+    /* margin: 5px; */
     align-items: center;
     gap: 20px;
     border-radius: 10px;
