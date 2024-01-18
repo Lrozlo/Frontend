@@ -234,8 +234,8 @@ section h2 em{
     width: 120px;
     height: 120px;
     position: absolute;
-    top: -110px;
-    right: 0px;
+    bottom: 55px;
+    left: 110px;
 }
 
 .teckSection{
@@ -301,6 +301,7 @@ section h2 em{
     gap: 40px;
     align-self: stretch;
     background: #E6EEFF;
+    border-radius: 24px;
 }
 .Title1{
     color: #403930;
@@ -362,13 +363,15 @@ section h2 em{
 
 }
 .projectImage1{
-    width: 155.099px;
-    height: 327.965px;
+    width: 100.153px;
+    height: 193.433px;
     flex-shrink: 0;
     border-radius: 16.08px;
-    background: lightgray 50% / cover no-repeat;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
+
+/* peer */
 .peerSection{
     display: flex;
     max-width: 1360px;
