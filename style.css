@@ -1,6 +1,15 @@
-body {
-    font-family: "Pretendard Variable",Pretendard, 'Noto Sans KR', sans-serif;
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css');
+
+html {
+	font-family: 'Pretendard Variable', Pretendard, -apple-system,
+		BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+		'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
+
+/* body {
+    font-family: Pretendard, 'Noto Sans KR', sans-serif;
+} */
 
 nav {
     /* 레이아웃에 대한 스타일(5~10줄) */
@@ -406,7 +415,7 @@ section h2 em{
 
 .peerContents{
     color: #403930;
-    font-family: Work Sans;
+    font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -415,7 +424,7 @@ section h2 em{
 .peerName{
     color: #403930;
     text-align: center;
-    font-family: Work Sans;
+    font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -435,7 +444,7 @@ section h2 em{
 .thanksContent{
     align-self: stretch;
     color: #403930;
-    /* font-family: Pretendard; */
+    font-family: Pretendard;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
@@ -466,7 +475,7 @@ footer{
 .copyRight{
     color: var(--Dark, #21243D);
     text-align: center;
-    font-family: Heebo;
+    font-family: Pretendard;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -491,7 +500,7 @@ footer{
 .contact{
     color: rgba(64, 57, 48, 0.80);
     text-align: center;
-    /* font-family: Pretendard; */
+    font-family: Pretendard;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
