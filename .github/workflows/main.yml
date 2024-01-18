@@ -21,7 +21,7 @@ jobs:
           aws-region: ap-northeast-2 # AWS S3 버킷이 위치한 리전으로 변경
 
       - name: Upload to S3
-        run: aws s3 sync web s3://kny-portfolio-bucket/
+        run: aws s3 sync . s3://kny-portfolio-bucket/
 
       - name: Invalidate cloudfront
         run: aws cloudfront create-invalidation --distribution-id ETPM5AQPNTSX5 --paths "/*" # Cloudfront ID로 변경
