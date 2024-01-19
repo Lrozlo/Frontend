@@ -350,7 +350,7 @@ section h2 em{
 .projectSubBox2{
     display: flex;
     gap: 20px;
-
+    justify-content: center;
 }
 .projectImage1{
     width: calc(30%);

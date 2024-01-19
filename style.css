@@ -369,7 +369,8 @@ section h2 em{
 .projectSubBox2{
     display: flex;
     gap: 20px;
-
+    justify-content: flex-start;
+    min-width:280px;
 }
 .projectImage1{
     width: calc(30%);
